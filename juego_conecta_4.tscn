@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://ctofgc2x2dab0"]
+
+[ext_resource type="Script" uid="uid://brf1pb3ikv73r" path="res://juego_conecta_4.gd" id="1_fbe43"]
+[ext_resource type="Texture2D" uid="uid://bu8dbhq2qom8m" path="res://Imagenes/dddd.jpg" id="2_6n6bk"]
+[ext_resource type="Texture2D" uid="uid://ctgji81rlhih3" path="res://Imagenes/qqqqq.jpg" id="3_ibme0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibme0"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cc4ow"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_no57r"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_srd5a"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xv3df"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s66n6"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lx540"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="JuegoConecta4" type="Control" unique_id=575132655]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 1.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fbe43")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1623645340]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6n6bk")
+expand_mode = 1
+
+[node name="MenuPrincipal" type="VBoxContainer" parent="." unique_id=81651815]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.568146
+offset_top = -75.0
+offset_right = 119.568146
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.0400006, 1)
+theme_override_constants/separation = 12
+
+[node name="Conecta 4" type="Label" parent="MenuPrincipal" unique_id=882432035]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+
+[node name="BtnJugar" type="Button" parent="MenuPrincipal" unique_id=903245680]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ibme0")
+text = "Jugar"
+
+[node name="BtnSalir" type="Button" parent="MenuPrincipal" unique_id=126127248]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_cc4ow")
+text = "Salir"
+
+[node name="MenuDificultad" type="VBoxContainer" parent="." unique_id=815383530]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -184.25
+offset_top = -149.0
+offset_right = 184.25
+offset_bottom = 149.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="SeleccioneNivelDificultad" type="Label" parent="MenuDificultad" unique_id=1862679581]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Seleccione dificultad"
+
+[node name="BtnFacil" type="Button" parent="MenuDificultad" unique_id=1576313409]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_no57r")
+text = "Facil"
+
+[node name="BtnMedio" type="Button" parent="MenuDificultad" unique_id=891148326]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_srd5a")
+text = "Medio"
+
+[node name="BtnDificil" type="Button" parent="MenuDificultad" unique_id=1048215829]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_xv3df")
+text = "Dificil"
+
+[node name="BtnVolverMenu" type="Button" parent="MenuDificultad" unique_id=1712074421]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_s66n6")
+text = "Volver Menu"
+
+[node name="AreaJuego" type="VBoxContainer" parent="." unique_id=165574921]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -191.875
+offset_right = 176.0
+offset_bottom = 191.875
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LabelTurno" type="Label" parent="AreaJuego" unique_id=607574021]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="BtnRegresarMenu" type="Button" parent="AreaJuego" unique_id=1183114817]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_lx540")
+text = "Volver al Menu principal"
+
+[node name="ColorRect" type="ColorRect" parent="AreaJuego" unique_id=257912371]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.9137255, 0.21960784, 0.7529412, 0.42352942)
+
+[node name="TextureRect" type="TextureRect" parent="AreaJuego/ColorRect" unique_id=449737157]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -2.125
+offset_right = 381.0
+offset_bottom = 329.875
+size_flags_vertical = 3
+texture = ExtResource("3_ibme0")
+expand_mode = 1
+
+[node name="GridContainer" type="GridContainer" parent="AreaJuego" unique_id=969706353]
+layout_mode = 2
+columns = 7
+
+[node name="AcceptDialog" type="AcceptDialog" parent="." unique_id=1445606627]
+oversampling_override = 1.0
